@@ -1,0 +1,48 @@
+{
+  "name": "snctry.web",
+  "version": "1.0.0",
+  "description": "The Sanctuary for Web",
+  "main": "index.js",
+  "repository": "https://github.com/BehemothTheCat/snctry.web.git",
+  "author": "psthmncnd <altanhir@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "lint": "eslint **/*.{js,jsx} --quiet"
+  },
+  "dependencies": {
+    "moment": "^2.18.1",
+    "react": "^15.6.1",
+    "react-addons-perf": "^15.4.2",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "styled-components": "^2.1.2",
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-flow": "^2.29.1",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-plugin-react": "^7.3.0",
+    "flow-bin": "^0.54.0",
+    "prettier": "^1.6.1",
+    "react-hot-loader": "^1.3.1",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
