@@ -5,12 +5,12 @@ module.exports = {
   context: __dirname,
   entry: [
     /* three below required for hot module replacement */
-    // "react-hot-loader/patch",
-    // "webpack-dev-server/client?http://localhost:8080",
-    // "webpack/hot/only-dev-server",
+    "react-hot-loader/patch",
+    "webpack-dev-server/client?http://localhost:8080",
+    "webpack/hot/only-dev-server",
 
     /* regular entry point */
-    "./src/ClientApp.jsx"
+    "./src/App.jsx"
   ],
   devtool: "cheap-eval-source-map",
   output: {
@@ -20,7 +20,7 @@ module.exports = {
   },
   devServer: {
     publicPath: "/public/",
-    // hot: true, // required for hot module repacement
+    hot: true, // required for hot module repacement
 
     // the client and not devServer will worry about routing (?)
     // look cmder "404s will fallback to /index.html"
@@ -40,8 +40,8 @@ module.exports = {
   },
   plugins: [
     /* two below required for HMR */
-    //new webpack.HotModuleReplacementPlugin(),
-    //new webpack.NamedModulesPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin()
   ],
   module: {
     rules: [
