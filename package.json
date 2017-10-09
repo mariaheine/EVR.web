@@ -1,38 +1,14 @@
 {
   "scripts": {
-    "api": "node ratingsAPI.js",
     "build": "webpack",
-    "dev": "webpack-dev-server",
-    "format":
-      "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.{js,jsx}\"",
-    "lint": "eslint **/*.{js,jsx} --quiet",
-    "watch": "webpack --watch",
-    "test": "NODE_ENV=test && ./node_modules/.bin/jest"
+    "dev": "webpack-dev-server"
   },
   "dependencies": {
     "aframe": "^0.7.0",
     "aframe-react": "^4.3.0",
-    "axios": "0.16.1",
-    "compression": "1.6.2",
-    "cors": "2.8.3",
-    "dev": "^0.1.3",
-    "express": "4.15.3",
-    "global": "^4.3.2",
-    "lodash": "4.17.4",
-    "preact": "8.1.0",
-    "preact-compat": "3.16.0",
-    "prop-types": "15.5.10",
-    "react": "15.5.4",
-    "react-addons-perf": "15.4.2",
-    "react-dom": "15.5.4",
-    "react-redux": "5.0.5",
-    "react-router-dom": "4.1.1",
-    "redux": "3.6.0",
-    "redux-thunk": "2.2.0",
-    "styled-components": "2.0.0",
-    "webpack": "2.6.1",
-    "webpack-dev-middleware": "1.10.2",
-    "webpack-hot-middleware": "2.18.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -50,8 +26,6 @@
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "6.24.1",
-    "cross-env": "^5.0.5",
-    "enzyme": "2.8.2",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "15.0.1",
     "eslint-config-prettier": "2.1.1",
@@ -64,21 +38,18 @@
     "eslint-plugin-jsx-a11y": "5.0.3",
     "eslint-plugin-prettier": "2.1.1",
     "eslint-plugin-react": "7.0.1",
-    "flow-bin": "^0.53.0",
-    "jest": "20.0.4",
-    "jest-serializer-enzyme": "1.0.0",
-    "moxios": "0.4.0",
-    "nodemon": "1.11.0",
     "prettier": "1.3.1",
     "react-hot-loader": "3.0.0-beta.6",
-    "react-test-renderer": "15.5.4",
-    "webpack-dev-server": "2.4.5"
+    "webpack": "2.6.1",
+    "webpack-dev-middleware": "1.10.2",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-hot-middleware": "2.18.0"
   },
-  "name": "messing-around-v2",
-  "version": "3.0.0",
-  "description": "A Complete Intro to React workshop",
-  "main": "server.js",
-  "repository": "git@github.com:btholt/complete-intro-to-react.git",
-  "author": "Brian Holt <btholt@gmail.com>",
+  "name": "EVR.web",
+  "version": "1.0.0",
+  "description": "EVR Infopage",
+  "main": "bundle.js",
+  "repository": "null",
+  "author": "psthmn-cnd",
   "license": "MIT"
 }

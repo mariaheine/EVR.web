@@ -10,7 +10,7 @@ module.exports = {
     "webpack/hot/only-dev-server",
 
     /* regular entry point */
-    "./src/App.jsx"
+    "./src/ClientApp.jsx"
   ],
   devtool: "cheap-eval-source-map",
   output: {
@@ -30,7 +30,7 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx", ".json"],
     alias: {
-      //Components: path.resolve(__dirname, "js/pages/components")
+      // Components: path.resolve(__dirname, "js/pages/components")
     }
   },
   stats: {
