@@ -35,10 +35,10 @@ const orient3Texture = "/public/textures/OrientalPanels3.jpg";
 const orient4Texture = "/public/textures/OrientalPanels4.jpg";
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { shadowsON: false, currentCameraTarget: "0 0 0" };
-  }
+  state = {
+    currentCameraTarget: "0 0 0"
+    // currentCameraPos: "45 0 90"
+  };
 
   // componentDidMount() {
   //   document
@@ -48,7 +48,8 @@ class Home extends React.Component {
 
   setPosition1 = () => {
     this.setState({ currentCameraTarget: "-10 0 0" });
-    console.log("jevasvv");
+    var el = document.querySelector("#camera");
+    el.emit("animateyo");
   };
 
   render() {
@@ -138,19 +139,20 @@ class Home extends React.Component {
             />
           </Entity>
 
-          <Camera currentCameraTarget={this.currentCameraTarget} />
+          <Camera />
         </Scene>
       </div>
     );
   }
 }
 // <Entity
+//   id="camera"
 //   camera
-//   position="0 2 0"
+//   position={this.state.currentCameraPos}
 //   animation__translat={{
 //     property: "position",
 //     to: "2 1.6 -4",
-//     dur: 2000,
+//     dur: 4000,
 //     easing: "linear",
 //     loop: false
 //   }}

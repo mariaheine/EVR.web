@@ -6,15 +6,24 @@ import Home from "./content/Home";
 
 const FourOhFour = () => <h1>404 xD</h1>;
 
-const App = () =>
-  <BrowserRouter>
-    <div className="app">
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route component={FourOhFour} />
-      </Switch>
-    </div>
-  </BrowserRouter>;
+class App extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="app">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route component={FourOhFour} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
+  componentWillMount() {
+    // require("aframe");
+    // require("aframe-animation-component");
+  }
+}
 
 export default App;
 
