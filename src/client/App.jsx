@@ -6,7 +6,7 @@ import Home from "./content/Home";
 
 const FourOhFour = () => <h1>404 xD</h1>;
 
-const App = () => (
+const App = () =>
   <BrowserRouter>
     <div className="app">
       <Switch>
@@ -14,8 +14,7 @@ const App = () => (
         <Route component={FourOhFour} />
       </Switch>
     </div>
-  </BrowserRouter>
-);
+  </BrowserRouter>;
 
 export default App;
 
