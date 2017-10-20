@@ -1,0 +1,32 @@
+{
+  "posters": [
+    {
+      "id": "1",
+      "title": "About",
+      "position": "6 1.6 3",
+      "rotation": "0 270 0",
+      "image": "OrientalPanels1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Contact",
+      "position": "2 1.6 -5.5",
+      "rotation": "0 0 0",
+      "image": "OrientalPanels4.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Yo",
+      "position": "-5.5 1.6 1",
+      "rotation": "0 90 0",
+      "image": "OrientalPanels2.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Bijacz",
+      "position": "2 1.6 5.5",
+      "rotation": "0 180 0",
+      "image": "OrientalPanels3.jpg"
+    }
+  ]
+}
