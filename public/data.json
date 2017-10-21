@@ -4,7 +4,7 @@
       "id": "1",
       "title": "About",
       "position": "6 1.6 3",
-      "rotation": "0 270 0",
+      "rotation": "0 -90 0",
       "image": "OrientalPanels1.jpg"
     },
     {
@@ -16,14 +16,14 @@
     },
     {
       "id": "3",
-      "title": "hurr",
+      "title": "420",
       "position": "-5.5 1.6 1",
       "rotation": "0 90 0",
       "image": "OrientalPanels2.jpg"
     },
     {
       "id": "4",
-      "title": "durr",
+      "title": "blazeit",
       "position": "2 1.6 5.5",
       "rotation": "0 180 0",
       "image": "OrientalPanels3.jpg"

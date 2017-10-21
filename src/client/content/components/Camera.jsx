@@ -54,11 +54,13 @@ class Camera extends React.Component {
     let tmpTargetPos = "";
     let tmpTargetRot = "";
 
+    /* MAIN MENU POSITIONING */
     if (this.props.cameraTarget == "Home") {
       // hard coded logic for home menu
       // add orbital camera
       tmpTargetPos = "1 1.6 1";
     } else {
+      /* SECONDARY POSTERS POSITIONING */
       const tmpPoster = document.querySelector(
         `#pstr${this.props.cameraTarget}`
       );
@@ -72,11 +74,16 @@ class Camera extends React.Component {
       let distX = Math.sin(rotY * (Math.PI / 180)) * distanceFromPoster;
       let distZ = Math.cos(rotY * (Math.PI / 180)) * distanceFromPoster;
 
+      // whats interesting is that this rotation makes the user actually face the same direction as the poster, wtf, should be the opposite, thats why I use below posY instead of targetRotY
       let targetRotY = rotY + 180;
       let targetPosX = posX + distX;
       let targetPosZ = posZ + distZ;
 
       tmpTargetPos = `${targetPosX} ${posY} ${targetPosZ}`;
+
+      /* ROTATION HANDLING */
+      // TODO: CONSIDER USING HOLOGRAM POSTERS INSTEAD OF WALL-HANGING TYPE,
+      // OTHERWISE USER WILL BE LOOKING AT THE WALL ALL THE TIME
       tmpTargetRot = `0 ${rotY} 0`;
     }
 
@@ -92,7 +99,6 @@ class Camera extends React.Component {
     el.emit("startMovement");
   };
 
-  // "2 1.6 -4"
   render() {
     return (
       <Entity
