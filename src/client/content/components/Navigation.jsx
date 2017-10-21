@@ -11,17 +11,22 @@ import preload from "../../../../public/data.json";
 //   background-color: #555555;
 //   border: 5px;
 //   color: white;
-//   padding: 15px 32px;
+//   padding: 7px 20px;
 //   text-align: center;
 //   text-decoration: none;
 //   display: inline-block;
 //   font-size: 16px;
+//   z-index: 110;
 // `;
 
 class Navigation extends React.Component {
   state = {};
 
   render() {
+    var divNav = {
+      zIndex: 100
+    };
+
     const homeButton = (
       <button id="home_btn" onClick={this.props.buttonHandler("Home")}>
         Home

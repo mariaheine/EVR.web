@@ -77,7 +77,7 @@ class Camera extends React.Component {
       let targetPosZ = posZ + distZ;
 
       tmpTargetPos = `${targetPosX} ${posY} ${targetPosZ}`;
-      tmpTargetRot = `0 ${rotY} 0`;
+      tmpTargetRot = `0 ${targetRotY} 0`;
     }
 
     // update state camera target details and trigger animation start
