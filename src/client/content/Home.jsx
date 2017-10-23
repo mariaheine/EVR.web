@@ -19,6 +19,7 @@ const orient1Texture = "/public/textures/OrientalPanels1.jpg";
 const orient2Texture = "/public/textures/OrientalPanels2.jpg";
 const orient3Texture = "/public/textures/OrientalPanels3.jpg";
 const orient4Texture = "/public/textures/OrientalPanels4.jpg";
+const evrinfo = "/public/objects/evrinfo/evrinfo.gltf";
 
 class Home extends React.Component {
   state = {
@@ -57,13 +58,47 @@ class Home extends React.Component {
           />
           <Entity
             light={{
-              type: "point",
-              castShadow: true,
-              shadowMapHeight: 512,
-              shadowMapWidth: 512
+              type: "ambient",
+              intensity: 0.3
+                // castShadow: true,
+              // shadowMapHeight: 512,
+              // shadowMapWidth: 512
             }}
             position={{ x: 2, y: 2, z: 2 }}
           />
+            <Entity
+                light={{
+                    type: "point",
+                    intensity: 0.3,
+                    castShadow: true,
+                    decay: 2.5,
+                    shadowMapHeight: 512,
+                    shadowMapWidth: 512
+                }}
+                position={{ x: 0, y: 0, z: 0 }}
+            />
+            <Entity
+                light={{
+                    type: "point",
+                    intensity: 0.4,
+                    decay: 2.5,
+                    castShadow: true,
+                    shadowMapHeight: 512,
+                    shadowMapWidth: 512
+                }}
+                position={{ x: 2, y: 2, z: 2 }}
+            />
+            <Entity
+                light={{
+                    type: "point",
+                    intensity: 0.3,
+                    decay: 2.5,
+                    castShadow: true,
+                    shadowMapHeight: 512,
+                    shadowMapWidth: 512
+                }}
+                position={{ x: 2, y: 2, z: 2 }}
+            />
           <Entity
             obj-model={{ obj: samuraiObj }}
             material={{ src: samuraiTexture }}
@@ -72,6 +107,9 @@ class Home extends React.Component {
             position="0 0 0"
             shadow={{ cast: true }}
           />
+            <Entity
+            gltf-model="url(/public/objects/evrinfo/evrinfo.gltf)"
+            />
 
           <Posters />
 
