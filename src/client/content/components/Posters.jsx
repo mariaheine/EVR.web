@@ -1,3 +1,4 @@
+import "aframe-html-shader";
 import { Entity } from "aframe-react";
 import React from "react";
 
@@ -9,8 +10,8 @@ class Posters extends React.Component {
       <Entity
         key={`${poster.id}`}
         id={`pstr${poster.title}`}
-        geometry={{ primitive: "plane" }}
-        material={{ src: `/public/textures/${poster.image}` }}
+        geometry={{ primitive: "plane", height: 2, width: 1 }}
+        material={{ shader: "html", target: "#contact" }}
         position={poster.position}
         rotation={poster.rotation}
       />
@@ -22,5 +23,6 @@ class Posters extends React.Component {
     );
   }
 }
+// {{ src: `/public/textures/${poster.image}` }}
 
 export default Posters;
