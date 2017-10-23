@@ -44,7 +44,7 @@ class Home extends React.Component {
       <div>
         <Navigation buttonHandler={this.setNextCameraTarget} />
 
-        <Scene shadow={{ type: "basic" }} stats>
+        <Scene shadow={{ type: "basic"}} stats>
           <Entity
             geometry={{
               primitive: "plane",
@@ -56,55 +56,76 @@ class Home extends React.Component {
             rotation="-90 0 0"
             shadow={{ receive: this.state.shadowsON }}
           />
-          <Entity
-            light={{
-              type: "ambient",
-              intensity: 0.3
-                // castShadow: true,
-              // shadowMapHeight: 512,
-              // shadowMapWidth: 512
-            }}
-            position={{ x: 2, y: 2, z: 2 }}
-          />
+
+
             <Entity
                 light={{
-                    type: "point",
-                    intensity: 0.3,
-                    castShadow: true,
-                    decay: 2.5,
-                    shadowMapHeight: 512,
-                    shadowMapWidth: 512
-                }}
-                position={{ x: 0, y: 0, z: 0 }}
-            />
-            <Entity
-                light={{
-                    type: "point",
-                    intensity: 0.4,
-                    decay: 2.5,
+                    type: "spot",
+                    intensity: 0.8,
+                    angle: 26,
                     castShadow: true,
                     shadowMapHeight: 512,
                     shadowMapWidth: 512
                 }}
-                position={{ x: 2, y: 2, z: 2 }}
+                position={{ x: 0.193, y: 2.601, z: 7.546 }}
+                rotation="-90 0 0"
             />
             <Entity
                 light={{
                     type: "point",
-                    intensity: 0.3,
-                    decay: 2.5,
+                    intensity: 0.85,
+                    distance: 10,
                     castShadow: true,
                     shadowMapHeight: 512,
                     shadowMapWidth: 512
                 }}
-                position={{ x: 2, y: 2, z: 2 }}
+                position={{ x: 0.360, y: 2.785, z: 7.307 }}
+                rotation="-90 0 0"
             />
+            <Entity
+                light={{
+                    type: "point",
+                    intensity: 0.85,
+                    distance: 10,
+                    castShadow: true,
+                    shadowMapHeight: 512,
+                    shadowMapWidth: 512
+                }}
+                position={{ x: 0.360, y: 2.785, z: -1.307 }}
+                rotation="-90 0 0"
+            />
+            <Entity
+                light={{
+                    type: "spot",
+                    intensity: 0.5,
+                    angle: 26,
+                    castShadow: true,
+                    shadowMapHeight: 512,
+                    shadowMapWidth: 512
+                }}
+                position={{ x: 10.465, y: 3.571, z: 1.850 }}
+                rotation="-90 0 0"
+            />
+            <Entity
+                light={{
+                    type: "point",
+                    intensity: 1.6,
+                    distance: 3,
+                    castShadow: true,
+                    shadowMapHeight: 512,
+                    shadowMapWidth: 512
+                }}
+                position={{ x: 8.773, y: 1.192, z: 1.929 }}
+                rotation="-90 0 0"
+            />
+
+
           <Entity
             obj-model={{ obj: samuraiObj }}
             material={{ src: samuraiTexture }}
-            scale="1 1 1"
-            rotation="0 0 0"
-            position="0 0 0"
+            scale="0.8 0.8 0.8"
+            rotation="0 -90 0"
+            position="10 0.1 2"
             shadow={{ cast: true }}
           />
             <Entity
