@@ -16812,7 +16812,7 @@
                     "diffuseTexture" : {
                         "index" : 0
                     }, 
-                    "glossinessFactor" : 0.5
+                    "glossinessFactor" : 0.0
                 }
             }, 
             "name" : "Material", 
