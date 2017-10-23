@@ -17439,7 +17439,8 @@
                 "KHR_materials_pbrSpecularGlossiness" : {
                     "diffuseTexture" : {
                         "index" : 10
-                    }
+                    }, 
+                    "glossinessFactor" : 0.0
                 }
             }, 
             "name" : "Material.004", 
@@ -17462,7 +17463,7 @@
             "name" : "Material.005", 
             "normalTexture" : {
                 "index" : 14, 
-                "scale" : 1.3999994993209839
+                "scale" : 0.39999955892562866
             }, 
             "occlusionTexture" : {
                 "index" : 13, 

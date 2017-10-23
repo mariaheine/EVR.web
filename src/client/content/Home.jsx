@@ -118,6 +118,18 @@ class Home extends React.Component {
                 position={{ x: 8.773, y: 1.192, z: 1.929 }}
                 rotation="-90 0 0"
             />
+            <Entity
+                light={{
+                    type: "point",
+                    intensity: 0.6,
+                    distance: 10,
+                    castShadow: true,
+                    shadowMapHeight: 512,
+                    shadowMapWidth: 512
+                }}
+                position={{ x: 7, y: 2.612, z: 0.829 }}
+                rotation="-90 0 0"
+            />
 
 
           <Entity
