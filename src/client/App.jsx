@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 /* PAGES */
 import Home from "./content/Home";
+import BufferTest from "./content/test/BufferTest";
 
 const FourOhFour = () => <h1>404 xD</h1>;
 
@@ -13,6 +14,7 @@ class App extends React.Component {
         <div className="app">
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/test" component={BufferTest} />
             <Route component={FourOhFour} />
           </Switch>
         </div>

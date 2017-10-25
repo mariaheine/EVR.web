@@ -1,4 +1,6 @@
 import "aframe-html-shader";
+// LOGGED WARNING "core:schema:warn Default value `null` does not match type `string` in component `undefined`""
+// is caoused by above import, don't know why
 import { Entity } from "aframe-react";
 import React from "react";
 

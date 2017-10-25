@@ -68,6 +68,10 @@ class Home extends React.Component {
             embedded
             stats
           >
+            <a-assets>
+              <a-asset-item id="samurai-obj" src={samuraiObj} />
+              <img id="samurai-txtr" src={samuraiTexture} />
+            </a-assets>
             <Entity
               geometry={{
                 primitive: "plane",
@@ -89,12 +93,12 @@ class Home extends React.Component {
               position={{ x: 2, y: 2, z: 2 }}
             />
             <Entity
-              obj-model={{ obj: samuraiObj }}
-              material={{ src: samuraiTexture }}
-              scale="1 1 1"
-              rotation="0 0 0"
-              position="0 0 0"
+              id="entSamurai"
+              obj-model={{ obj: "#samurai-obj" }}
+              material={{ src: "#samurai-txtr" }}
+              position="1 0 1"
               shadow={{ cast: true }}
+              geometry={{ buffer: false, skipCache: true }}
             />
 
             <Posters />
