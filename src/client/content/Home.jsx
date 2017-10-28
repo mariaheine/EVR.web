@@ -45,6 +45,9 @@ class Home extends React.Component {
         <Navigation buttonHandler={this.setNextCameraTarget} />
 
         <Scene shadow={{ type: "basic"}} stats>
+            <a-assets>
+                <a-asset-item id="evr" src="/public/objects/evrinfo/evrinfo.gltf" />
+            </a-assets>
           <Entity
             geometry={{
               primitive: "plane",
@@ -60,12 +63,9 @@ class Home extends React.Component {
 
             <Entity
                 light={{
-                    type: "spot",
-                    intensity: 0.8,
-                    angle: 26,
-                    castShadow: true,
-                    shadowMapHeight: 512,
-                    shadowMapWidth: 512
+                    type: "ambient",
+                    intensity: 0.3,
+
                 }}
                 position={{ x: 0.193, y: 2.601, z: 7.546 }}
                 rotation="-90 0 0"
@@ -82,18 +82,18 @@ class Home extends React.Component {
                 position={{ x: 0.360, y: 2.785, z: 7.307 }}
                 rotation="-90 0 0"
             />
-            <Entity
-                light={{
-                    type: "point",
-                    intensity: 0.85,
-                    distance: 10,
-                    castShadow: true,
-                    shadowMapHeight: 512,
-                    shadowMapWidth: 512
-                }}
-                position={{ x: 0.360, y: 2.785, z: -1.307 }}
-                rotation="-90 0 0"
-            />
+            {/*<Entity*/}
+                {/*light={{*/}
+                    {/*type: "point",*/}
+                    {/*intensity: 0.85,*/}
+                    {/*distance: 10,*/}
+                    {/*castShadow: true,*/}
+                    {/*shadowMapHeight: 512,*/}
+                    {/*shadowMapWidth: 512*/}
+                {/*}}*/}
+                {/*position={{ x: 0.360, y: 2.785, z: -1.307 }}*/}
+                {/*rotation="-90 0 0"*/}
+            {/*/>*/}
             <Entity
                 light={{
                     type: "spot",
@@ -118,18 +118,18 @@ class Home extends React.Component {
                 position={{ x: 8.773, y: 1.192, z: 1.929 }}
                 rotation="-90 0 0"
             />
-            <Entity
-                light={{
-                    type: "point",
-                    intensity: 0.6,
-                    distance: 10,
-                    castShadow: true,
-                    shadowMapHeight: 512,
-                    shadowMapWidth: 512
-                }}
-                position={{ x: 7, y: 2.612, z: 0.829 }}
-                rotation="-90 0 0"
-            />
+            {/*<Entity*/}
+                {/*light={{*/}
+                    {/*type: "point",*/}
+                    {/*intensity: 0.6,*/}
+                    {/*distance: 10,*/}
+                    {/*castShadow: true,*/}
+                    {/*shadowMapHeight: 512,*/}
+                    {/*shadowMapWidth: 512*/}
+                {/*}}*/}
+                {/*position={{ x: 7, y: 2.612, z: 0.829 }}*/}
+                {/*rotation="-90 0 0"*/}
+            {/*/>*/}
 
 
           <Entity
@@ -141,7 +141,7 @@ class Home extends React.Component {
             shadow={{ cast: true }}
           />
             <Entity
-            gltf-model="url(/public/objects/evrinfo/evrinfo.gltf)"
+            gltf-model="#evr"
             />
 
           <Posters />
