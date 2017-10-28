@@ -98,7 +98,7 @@ class Home extends React.Component {
               material={{ src: "#samurai-txtr" }}
               position="1 0 1"
               shadow={{ cast: true }}
-              geometry={{ buffer: false, skipCache: true }}
+              geometry={{ buffer: true, skipCache: false }}
             />
 
             <Posters />

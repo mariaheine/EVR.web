@@ -18,7 +18,7 @@ module.exports = {
   devServer: {
     publicPath: "/public/",
     port: 8080,
-    historyApiFallback: false
+    historyApiFallback: true
   },
 
   // loaders
